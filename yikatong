@@ -295,9 +295,7 @@
             }else{
                 document.getElementById("enter_name").innerHTML='出校码';
             }
-
         }
-
     </script>
 
     
