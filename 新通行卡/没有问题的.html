@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习前端网页</title>
+    <style>
+        body{
+            width: 100%;
+            height: auto;
+            background-color: #6bc372;
+        }
+
+        .choose_box{
+            margin-top: 10px;
+            order: 1;
+        }
+        .choose_1{
+            display: inline-block;
+            height: 42px;
+            width: 100px;
+            background-color: white;
+            text-align: center;
+            line-height: 45px;
+            border: 1px solid gray;
+            position: absolute;
+            top: 15px;
+            right: 30.8%;
+            color: gray;
+            border-radius: 0 5px 5px 0;
+            
+        }
+
+        .choose_2{
+            display: inline-block;
+            height: 42px;
+            width: 100px;
+            line-height: 45px;
+            background-color: white;
+            text-align: center;
+            border: 1px solid gray;
+            position: absolute;
+            top: 15px;
+            left: 30.8%;
+            color: gray;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .choose_1:hover{
+            color: white;
+            border: solid #669bcf 1px;
+            background-color: #1e5193;
+            
+        }
+
+        .choose_2:hover{
+            color: white;
+            border: solid #669bcf 1px;
+            background-color: #1e5193;
+        }
+
+        .health_box{
+            position: 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="choose_box">
+            <span class="choose_1" onclick=editinPut(1) >入校码</span>
+            <span class="choose_2" onclick=editinPut(2) >出校码</span>
+        </div>
+        <div class="health_box">
+            <span class="white_bj">
+                <img src="./图片/bgjian.aa1b69b4.png" alt="" width="400px">
+            </span>
+            <div class="health_box_title">
+                <span id="beijing">
+                    <img src="./图片/WechatIMG3128.jpeg" alt="" width="25px">
+                </span>
+                <span id="enter_name"></span>
+            </div>
+            <div class="showTime">
+                <span id="auto-refresh-date">2021年10月08日</span>
+                <span id="auto-refresh-time" onload="autoRefreshTime()">20:49:37</span></div>
+            <script>Date.prototype.format = function(fmt) {
+                var o = {
+                  "y+": this.getFullYear,
+                  "M+": this.getMonth() + 1,
+                  "d+": this.getDate(),
+                  "h+": this.getHours(),
+                  "m+": this.getMinutes(),
+                  "s+": this.getSeconds()
+                };
+                if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                for (var k in o) if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+                return fmt;
+              }
+              setInterval("document.getElementById('auto-refresh-date').innerHTML = (new Date()).format('yyyy年MM月dd日')", 1000);
+              setInterval("document.getElementById('auto-refresh-time').innerHTML = (new Date()).format('hh:mm:ss')", 1000);</script>
+
+                <div class="cut_line_1">
+                </div>
+            </div>
+    </div>
+    
+    <script>
+
+        function editinPut(e) {
+            if (e===1){
+                document.getElementById("enter_name").innerHTML='入校码';
+            }else{
+                document.getElementById("enter_name").innerHTML='出校码';
+            }
+
+        }
+
+    </script>
+</body>
+</html>
