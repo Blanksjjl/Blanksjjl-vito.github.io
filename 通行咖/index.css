@@ -1,0 +1,187 @@
+    *{
+        margin: 0;
+    }
+    
+    body{
+        width: 100%;
+        background-color: #6bc372;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .top_title{
+        display: block;
+        height: 120px;
+        margin-top: 1.372%;
+        text-align: center;
+    }
+
+    .choose_1{
+        display: inline-block;
+        height: 120px;
+        width: 21.4%;
+        right: 28.5%;
+        background-color: white;
+        text-align: center;
+        line-height: 120px;
+        font-size: 30px;
+        border: 1px solid gray;
+        border-radius: 10px 0px 0px 10px;
+        color: gray;
+    }
+
+    .choose_2{
+        display: inline-block;
+        position: flex;
+        height: 120px;
+        width: 21.4%;
+        left: 28.5%;
+        background-color: white;
+        text-align: center;
+        line-height: 120px;
+        font-size: 30px;
+        border: 1px solid gray;
+        border-radius: 0px 10px 10px 0px;
+        color: gray;
+    }
+
+    .choose_1:hover{
+        color: white;
+        border: solid #669bcf 2px;
+        background-color: #1e5193;
+        
+    }
+
+    .choose_2:hover{
+        color: white;
+        border: solid #669bcf 2px;
+        background-color: #1e5193;
+    }
+
+    .health_box{
+        display: block;
+        position: flex;
+        width: 90%;
+        height: 1720px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 2.056%;
+        background-image: url(./图片/bgjian.aa1b69b4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    .enter_name{
+        text-align: center;
+
+    }
+
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 4%;
+    }
+
+    #word{
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 35px;
+        margin-top: 4%;
+    }
+
+    .timer{
+        text-align: center;
+    }
+    .reflash_time {
+        display: inline-block;
+        width: 86.5%;
+        height: 93px;
+        background-color: #ecf5ee;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 40px;
+        color: #6bc372;
+        line-height: 93px;
+        margin-top: 3%;
+        font-size: 35px;
+    }
+
+    .cut_line_box{
+        display: block;
+        text-align: center;
+    }
+
+    .cut_line_1{
+        display: inline-block;
+        height: 3px;
+        width: 86.5%;
+        background-color: #e5e5e4;
+        text-align: center;
+    }
+
+    .cut_line_box{
+        text-align: center;
+    }
+
+    .big_box{
+        text-align: center;
+        display: block;
+        background-image: url(./图片/green_bg.gif);
+        vertical-align: middle;
+        padding: 3%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-top: 5%;
+    }
+    .picture img{
+        border-radius: 20px;
+    }
+
+    .guest_information{
+        text-align: center;
+    }
+
+    table{
+        text-align: left;
+        display: table;
+        margin: 80px auto 0;
+        font-size: 30px;
+    }
+
+    .cut_line_2{
+        display: inline-block;
+        height: 3px;
+        width: 86.5%;
+        background-color: #e5e5e4;
+        text-align: center;
+        }
+
+        .cut_line_box{
+            display: block;
+            text-align: center;
+        }
+    
+        .cut_line_2{
+            display: inline-block;
+            height: 3px;
+            width: 86.5%;
+            background-color: #e5e5e4;
+            text-align: center;
+            margin-top: 47px;
+        }
+        
+        #passport{
+            font-size: 50px;
+            color: #38ac41;
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 62px;
+        }
+
+        .bottom{
+            display: block;
+            margin-top: 0px;
+        }
